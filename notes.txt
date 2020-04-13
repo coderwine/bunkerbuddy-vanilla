@@ -1,0 +1,5 @@
+Starting with Canned Goods:
+
+- Item
+- Qty on Hand
+- Meals per Day 

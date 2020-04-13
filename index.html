@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Bunker Buddy</title>
+</head>
+<body>
+    <h1>Bunker Buddy</h1>
+    <h2 id="endDate"></h2>
+    <span id="todayIS"></span> 
+    <form type="submit" id="form" name="form">
+      <!-- SET REQUIRED FOR ALL INPUTS -->
+      <input type="text" name="item" id="item" placeholder="Canned Goods" > <br>
+      <input type="number" name="qty" id="qty" placeholder="Quantity on Hand" ><br>
+      <input type="number" name="est" id="est" placeholder="Used per Week"><br>
+      <!-- <input type="number" name="months" id="months" placeholder="How Many Months Desired" ><br> -->
+      <button type="submit" id="btn">Tally</button>
+    </form>
+    <button type="clear" id="btnClear" onclick="clearForm()" >Clear</button>
+
+    <!-- <div id="inject"></div> -->
+
+    <table id="displayedInfo">
+      <caption>Bunker Buddies Baggy of Bonafides</caption>
+      <thead>
+          <th>Goods</th>
+          <th>Rations</th>
+          <th>per Week</th>
+          <th>Will Last</th>
+      </thead>
+      <tbody id="inject" >
+        
+      </tbody>
+    </table>
+
+  <script src="scripts/measurements.js"></script>  
+</body>
+</html>
