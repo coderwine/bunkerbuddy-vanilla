@@ -97,8 +97,6 @@ countCans = () => {
 
 }
 
-
-
 // CLEAR THE FORM
 clearForm = () => {
     document.getElementById('form').reset();
